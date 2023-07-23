@@ -258,7 +258,6 @@ footer .container-footer .footer-four {
 footer .container-footer .footer-four .footer-four-top img {
     width: 30px;
     height: 30px;
-
 }
 
 footer .container-footer .footer-four .logo-text,
@@ -351,6 +350,10 @@ hr {
         height: 600px;
     }
 
+    .container .right-column {
+        
+    }
+
     .container .right-column .right-column-top,
     .container .right-column .right-column-middle {
         width: 70%;
@@ -358,7 +361,8 @@ hr {
     }
 
     .container .right-column .right-column-bottom {
-        width: 200px;
+        width: 150px;
+        margin-top: 100px;
     }
 }
 
@@ -382,6 +386,7 @@ hr {
 
     .container .right-column .right-column-bottom {
         width: 250px;
+        margin-top: 30px;
     }
 
 }
