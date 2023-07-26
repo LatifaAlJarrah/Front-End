@@ -10,6 +10,26 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 
     <title>Responsive Header</title>
+
+    <style>
+      .btn {
+        background-color: #00ADEE;
+      }
+
+      .logo-text,
+      .btn-contact {
+        color: #00ADEE;
+      }
+
+      .btn-contact {
+        border: 1px solid #00ADEE;
+      }
+
+      .footer {
+        background-color: #E5F7FD;
+;
+      }
+    </style>
   </head>
 
   <body>
@@ -17,13 +37,13 @@
       <nav class="bg-white border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800">
         <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href="#" class="flex items-center">
-            <span class="self-center text-xl font-semibold whitespace-nowrap text-blue-300">ستيد</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap logo-text">ستيد</span>
             <span class="self-center text-xl font-semibold whitespace-nowrap ml-1">كلين</span>
             <img src="images/logo.png" class="h-6 sm:h-9" alt="Website Logo" />
           </a>
           <div class="flex items-center lg:order-2">
             <a href="#"
-              class="text-gray-800 text-white bg-blue-500 focus:ring-4 focus:ring-gray-300 font-medium rounded-lg hover:text-white text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2">
+              class="btn text-gray-800 focus:ring-4 focus:ring-gray-300 font-medium rounded-2xl hover:text-white lg:py-2.5 w-32 h-12 text-center">
               احجز الآن
             </a>
             <button onclick="myFunction()" type="button"
@@ -81,23 +101,23 @@
 
     <main>
       <div class="flex flex-col px-4 lg:px-6 py-2.5 lg:flex-row justify-between">
-        <img src="images/home.png" alt="Image" class="w-full max-w-xl cursor-pointer h-auto mb-6 lg:mb-0">
+        <img src="images/home.png" alt="Image" class="max-w-lg cursor-pointer h-auto mb-6 lg:mb-0">
 
-        <div class="lg:ml-6 flex flex-col justify-center items-end text-right">
-          <h3 class="text-4xl font-bold sm:text-2xl text-gray-700">من نحن</h3>
-          <p class="text-lg mt-3">
+        <div class="flex flex-col justify-center items-end text-right">
+          <h3 class="text-4xl font-bold sm:text-2xl text-black">من نحن</h3>
+          <p class="text-md mt-3 text-gray-600 w-96">
             هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص العربى،
             حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
             التطبيق <br>
             إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد النص العربى زيادة عدد الفقرات كما تريد،
             النص لن يبدو مقسما ولا يحوي أخطاء لغوية
           </p>
-          <button class="bg-blue-500 w-32 h-10 mt-6 cursor-pointer text-white rounded-xl">تواصل معنا</button>
+          <button class="w-32 h-10 mt-6 cursor-pointer text-white rounded-xl border-2 btn-contact">تواصل معنا</button>
         </div>
       </div>
     </main>
 
-    <footer>
+    <!-- <footer>
       <div
         class="mt-8 text-white text-center lg:px-6 py-2.5 justify-between bg-blue-500 mx-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
         <div class="sm:text-sm">
@@ -149,7 +169,62 @@
       <div class="bg-blue-500 mx-5 text-center text-white py-2 text-xs">
         جميع الحقوق محفوظة &copy; 2022
       </div>
-    </footer>
+    </footer> -->
+  
+  <footer class="footer dark:bg-gray-900 mr-4 ml-4 rounded-xl">
+    <div class="mx-auto w-full max-w-screen-xl justify-between px-2 mt-6 ">
+      <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+        <div class="text-right">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">تابعنا على</h2>
+            <ul class="grid grid-cols-6 gap-2 mt-2 cursor-pointer">
+              <li><i class="fa-brands fa-google"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-whatsapp"></i></li>
+              <li><i class="fa-brands fa-youtube"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-facebook"></i></li>
+            </ul>
+        </div>
+
+        <div class="text-right">
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">تواصل معنا</h2>
+            <div class="flex justify-end mt-2 sm:text-xs">
+              <p>0592700722</p>
+              <i class="fa-solid fa-phone ml-1 mt-1"></i>
+            </div>
+            <div class="flex justify-center mt-1">
+              <p class="sm:text-xs">eng.mohammadalhabil@gmail.com</p>
+              <i class="fa-solid fa-envelope ml-1 mt-1"></i>
+            </div>
+        </div>
+
+        <div class="text-right">
+            <h2 class="mb-4 text-sm font-semibold text-gray-900 uppercase dark:text-white">خدماتنا</h2>
+            <ul class="text-gray-500 dark:text-gray-400 font-medium">
+              <li><a href="#">تنظيف المنازل</a></li>
+              <li><a href="#">التنظيف التجاري</a></li>
+              <li><a href="#">تنظيف السجاد</a></li>
+              <li><a href="#">تنظيف النوافذ</a></li>
+              <li><a href="#">تنظيف السيارات</a></li>
+              <li><a href="#">تنظيف بعد البناء</a></li>
+            </ul>
+        </div>
+
+        <div>
+          <a href="#" class="flex justify-end">
+            <img src="images/logo.png" class="h-6 sm:h-9" alt="Website Logo" />
+            <span class="self-center text-xl font-semibold whitespace-nowrap text-gray-700 logo-text">ستيد</span>
+            <span class="self-center text-xl font-semibold whitespace-nowrap">كلين</span>
+          </a>
+          <p class="mt-4 text-sm text-right">هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد
+            النص العربى،
+            حيث يمكنك
+            أن تولد مثل هذا النص</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
   </body>
   <script>
     function myFunction() {
